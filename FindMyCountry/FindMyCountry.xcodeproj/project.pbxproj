@@ -68,6 +68,10 @@
 		274A545A2E0EDDF300A10B02 /* MockCountriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54592E0EDDF300A10B02 /* MockCountriesRepository.swift */; };
 		274A545C2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A545B2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift */; };
 		274A545F2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A545E2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift */; };
+		274A54622E0EEB7500A10B02 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54612E0EEB7500A10B02 /* HomeViewModelTests.swift */; };
+		274A54652E0EEBA300A10B02 /* MockCountriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54642E0EEBA300A10B02 /* MockCountriesUseCase.swift */; };
+		274A54672E0EEBBD00A10B02 /* MockSelectedCountriesCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54662E0EEBBD00A10B02 /* MockSelectedCountriesCache.swift */; };
+		274A54692E0EEBD300A10B02 /* MockLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54682E0EEBD300A10B02 /* MockLocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +155,10 @@
 		274A54592E0EDDF300A10B02 /* MockCountriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountriesRepository.swift; sourceTree = "<group>"; };
 		274A545B2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesRepositoryTests.swift; sourceTree = "<group>"; };
 		274A545E2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesUseCaseTests.swift; sourceTree = "<group>"; };
+		274A54612E0EEB7500A10B02 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		274A54642E0EEBA300A10B02 /* MockCountriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountriesUseCase.swift; sourceTree = "<group>"; };
+		274A54662E0EEBBD00A10B02 /* MockSelectedCountriesCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSelectedCountriesCache.swift; sourceTree = "<group>"; };
+		274A54682E0EEBD300A10B02 /* MockLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockLocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,6 +231,7 @@
 		274A52F12E0E646300A10B02 /* FindMyCountryTests */ = {
 			isa = PBXGroup;
 			children = (
+				274A54602E0EEB6C00A10B02 /* HomeViewModel */,
 				274A545D2E0EDE6200A10B02 /* UseCase */,
 				274A54542E0EDDAF00A10B02 /* Repository */,
 				274A544F2E0ED52600A10B02 /* NetworkService */,
@@ -584,6 +593,25 @@
 			path = UseCase;
 			sourceTree = "<group>";
 		};
+		274A54602E0EEB6C00A10B02 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				274A54632E0EEB9500A10B02 /* Mocks */,
+				274A54612E0EEB7500A10B02 /* HomeViewModelTests.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
+		274A54632E0EEB9500A10B02 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				274A54642E0EEBA300A10B02 /* MockCountriesUseCase.swift */,
+				274A54662E0EEBBD00A10B02 /* MockSelectedCountriesCache.swift */,
+				274A54682E0EEBD300A10B02 /* MockLocationManager.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -782,10 +810,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274A54692E0EEBD300A10B02 /* MockLocationManager.swift in Sources */,
 				274A545F2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift in Sources */,
+				274A54622E0EEB7500A10B02 /* HomeViewModelTests.swift in Sources */,
 				274A545C2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift in Sources */,
 				274A54512E0ED53500A10B02 /* NetworkServiceMocks.swift in Sources */,
+				274A54652E0EEBA300A10B02 /* MockCountriesUseCase.swift in Sources */,
 				274A54532E0ED56400A10B02 /* NetworkServiceTests.swift in Sources */,
+				274A54672E0EEBBD00A10B02 /* MockSelectedCountriesCache.swift in Sources */,
 				274A545A2E0EDDF300A10B02 /* MockCountriesRepository.swift in Sources */,
 				274A54582E0EDDCC00A10B02 /* MockAPIClient.swift in Sources */,
 			);

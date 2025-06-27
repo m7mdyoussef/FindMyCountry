@@ -37,6 +37,7 @@ struct SearchCountriesSheet: View {
                         .onTapGesture {
                             viewModel.selectedCountry = item
                             dismiss()
+                            viewModel.searchQuery = ""
                             showCountryDetail = true
                         }
                     }

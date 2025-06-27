@@ -16,6 +16,7 @@ struct HomeScreen: View {
     
     @State var openSearch: Bool = false
     @State var showCountryDetail: Bool = false
+    @State var showCachedCountryDetail: Bool = false
     @State var openCountryPicker: Bool = false
     
     var body: some View {
@@ -27,7 +28,7 @@ struct HomeScreen: View {
                 VStack(spacing: 20) {
                     SearchView(openSearch: $openSearch).padding(.top, 40)
                     DefaultCountryView(viewModel: viewModel, showCountryDetail: $showCountryDetail)
-                    SelectedCountriesListView(viewModel: viewModel, showCountryDetail: $showCountryDetail)
+                    SelectedCountriesListView(viewModel: viewModel, showCountryDetail: $showCachedCountryDetail)
                     AddCountryButton(openCountryPicker: $openCountryPicker)
                 }
                 .padding(20)
@@ -46,6 +47,13 @@ struct HomeScreen: View {
             guard newValue else {return}
             if let selectedCountry = viewModel.selectedCountry {
                 showCountryDetail = false
+                router.push(.details(country: selectedCountry) )
+            }
+        }
+        .onChange(of: showCachedCountryDetail) { _, newValue in
+            guard newValue else {return}
+            if let selectedCountry = viewModel.selectedCountry {
+                showCachedCountryDetail = false
                 router.push(.details(country: selectedCountry) )
             }
         }
