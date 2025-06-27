@@ -23,19 +23,22 @@ struct SearchCountriesSheet: View {
             }
             
             SearchTextFieldView(text: $searchQuery)
-            List {
-                ForEach(viewModel.searchList, id: \.self) { item in
-                    HStack {
-                        CountryFlagView(url: item.flags?.png ?? "")
-                            .frame(width: 40, height: 40)
-                        Text(item.name?.common ?? "")
-                        
-                    }
-                    .contentShape(Rectangle())
-                    .onTapGesture {
-                        viewModel.selectedCountry = item
-                        showCountryDetail = true
-                        dismiss()
+            ScrollView {
+                LazyVStack {
+                    ForEach(viewModel.searchList) { item in
+                        HStack {
+                            CountryFlagView(url: item.flags?.png ?? "")
+                                .frame(width: 40, height: 40)
+                            Text(item.name?.common ?? "")
+                            Spacer()
+                        }
+                        .padding(.vertical, 8)
+                        .contentShape(Rectangle())
+                        .onTapGesture {
+                            viewModel.selectedCountry = item
+                            dismiss()
+                            showCountryDetail = true
+                        }
                     }
                 }
             }
