@@ -29,6 +29,14 @@
 		274A53362E0E6EA200A10B02 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53352E0E6EA200A10B02 /* Router.swift */; };
 		274A53392E0E6ED000A10B02 /* Destination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53382E0E6ED000A10B02 /* Destination.swift */; };
 		274A533B2E0E6F1900A10B02 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A533A2E0E6F1900A10B02 /* HomeScreen.swift */; };
+		274A533E2E0E70B800A10B02 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A533D2E0E70B800A10B02 /* APIClient.swift */; };
+		274A53402E0E70D300A10B02 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A533F2E0E70D300A10B02 /* URLSessionProtocol.swift */; };
+		274A53422E0E70E600A10B02 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53412E0E70E600A10B02 /* NetworkService.swift */; };
+		274A53442E0E70FF00A10B02 /* ResponseValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53432E0E70FF00A10B02 /* ResponseValidator.swift */; };
+		274A53462E0E711400A10B02 /* APIEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53452E0E711400A10B02 /* APIEndpoint.swift */; };
+		274A53482E0E712E00A10B02 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53472E0E712E00A10B02 /* URLRequestBuilder.swift */; };
+		274A534A2E0E714200A10B02 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53492E0E714200A10B02 /* Logger.swift */; };
+		274A534C2E0E715700A10B02 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A534B2E0E715700A10B02 /* URLs.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +82,14 @@
 		274A53352E0E6EA200A10B02 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		274A53382E0E6ED000A10B02 /* Destination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destination.swift; sourceTree = "<group>"; };
 		274A533A2E0E6F1900A10B02 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		274A533D2E0E70B800A10B02 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		274A533F2E0E70D300A10B02 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		274A53412E0E70E600A10B02 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		274A53432E0E70FF00A10B02 /* ResponseValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseValidator.swift; sourceTree = "<group>"; };
+		274A53452E0E711400A10B02 /* APIEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoint.swift; sourceTree = "<group>"; };
+		274A53472E0E712E00A10B02 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
+		274A53492E0E714200A10B02 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		274A534B2E0E715700A10B02 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -191,6 +207,7 @@
 				274A53292E0E6D4C00A10B02 /* Common */,
 				274A53342E0E6E9100A10B02 /* Navigation */,
 				274A53372E0E6EB800A10B02 /* Destinations */,
+				274A533C2E0E70A200A10B02 /* NetworkService */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -412,6 +429,21 @@
 			path = Destinations;
 			sourceTree = "<group>";
 		};
+		274A533C2E0E70A200A10B02 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				274A533D2E0E70B800A10B02 /* APIClient.swift */,
+				274A533F2E0E70D300A10B02 /* URLSessionProtocol.swift */,
+				274A53412E0E70E600A10B02 /* NetworkService.swift */,
+				274A53432E0E70FF00A10B02 /* ResponseValidator.swift */,
+				274A53452E0E711400A10B02 /* APIEndpoint.swift */,
+				274A53472E0E712E00A10B02 /* URLRequestBuilder.swift */,
+				274A53492E0E714200A10B02 /* Logger.swift */,
+				274A534B2E0E715700A10B02 /* URLs.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -550,19 +582,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274A53402E0E70D300A10B02 /* URLSessionProtocol.swift in Sources */,
 				274A53332E0E6DB300A10B02 /* CustomDialog.swift in Sources */,
+				274A533E2E0E70B800A10B02 /* APIClient.swift in Sources */,
 				274A53122E0E683300A10B02 /* TextStyle.swift in Sources */,
 				274A53392E0E6ED000A10B02 /* Destination.swift in Sources */,
 				274A531E2E0E691900A10B02 /* String+Extension.swift in Sources */,
 				274A533B2E0E6F1900A10B02 /* HomeScreen.swift in Sources */,
+				274A53462E0E711400A10B02 /* APIEndpoint.swift in Sources */,
 				274A53312E0E6DA800A10B02 /* Loader.swift in Sources */,
+				274A534A2E0E714200A10B02 /* Logger.swift in Sources */,
 				274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */,
 				274A53102E0E67FA00A10B02 /* Popup.swift in Sources */,
+				274A53482E0E712E00A10B02 /* URLRequestBuilder.swift in Sources */,
 				274A53182E0E688300A10B02 /* AppResources.swift in Sources */,
 				274A532F2E0E6D8000A10B02 /* PopupPresent.swift in Sources */,
 				274A52ED2E0E645D00A10B02 /* FindMyCountryApp.swift in Sources */,
 				274A53152E0E685D00A10B02 /* HideKeyboardModifier.swift in Sources */,
 				274A53362E0E6EA200A10B02 /* Router.swift in Sources */,
+				274A53442E0E70FF00A10B02 /* ResponseValidator.swift in Sources */,
+				274A534C2E0E715700A10B02 /* URLs.swift in Sources */,
+				274A53422E0E70E600A10B02 /* NetworkService.swift in Sources */,
 				274A531B2E0E68CF00A10B02 /* Constants.swift in Sources */,
 				274A53262E0E69BD00A10B02 /* ToastModifier.swift in Sources */,
 				274A53222E0E696300A10B02 /* BackgroundViewModifier.swift in Sources */,
