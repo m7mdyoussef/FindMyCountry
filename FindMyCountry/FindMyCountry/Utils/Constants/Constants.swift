@@ -9,5 +9,19 @@ import Foundation
 
 struct AppConstants {
     
-    
+    struct AppError {
+        static let badResponse = "Bad Response: The request could not be completed due to network error or no response."
+        static let badRequest = "Bad Request: The server cannot process the request due to a client error."
+        static let unauthorized = "Unauthorized: Authentication is required and has failed or has not been provided."
+        static let forbidden = "Forbidden: You do not have the necessary permissions for the resource."
+        static let notFound = "Not Found: The requested resource could not be found."
+        static let methodNotAllowed = "Method Not Allowed: The request method is not supported for the requested resource."
+        static let conflict = "Conflict: The request could not be processed because of conflict in the request."
+        static let internalServerError = "Internal Server Error: The server encountered an unexpected condition that prevented it from fulfilling the request."
+        static let serviceUnavailable = "Service Unavailable: The server is currently unable to handle the request due to a temporary overloading or maintenance of the server."
+        static let requestTimeout = "Request time out"
+        static let invalidURL = "Invalid URL"
+        static let noConnection = "No Internet Connection, plaese try again"
+        static let SomeThingWentWrong = "Something went wrong"
+    }
 }
