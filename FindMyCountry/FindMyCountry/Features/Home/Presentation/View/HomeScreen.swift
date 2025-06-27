@@ -15,8 +15,7 @@ struct HomeScreen: View {
     @EnvironmentObject var router:Router<AppDestinationUIPilot>
     
     @State var openSearch: Bool = false
-    @State var showCountryDetail: Bool = false
-    @State var showCachedCountryDetail: Bool = false
+    @State var showOtherCountryDetail: Bool = false
     @State var openCountryPicker: Bool = false
     
     var body: some View {
@@ -27,8 +26,8 @@ struct HomeScreen: View {
                 
                 VStack(spacing: 20) {
                     SearchView(openSearch: $openSearch).padding(.top, 40)
-                    DefaultCountryView(viewModel: viewModel, showCountryDetail: $showCountryDetail)
-                    SelectedCountriesListView(viewModel: viewModel, showCountryDetail: $showCachedCountryDetail)
+                    DefaultCountryView(viewModel: viewModel)
+                    SelectedCountriesListView(viewModel: viewModel, showCountryDetail: $showOtherCountryDetail)
                     AddCountryButton(openCountryPicker: $openCountryPicker)
                 }
                 .padding(20)
@@ -37,23 +36,24 @@ struct HomeScreen: View {
         } onRefresh: {
             loading.isLoading = true
             viewModel.getAllCountries()
+            viewModel.requestUserLocation()
         }
         .oneTimeCalling{
             self.loading.isLoading = true
             self.viewModel.getAllCountries()
             self.viewModel.loadCachedCountries()
         }
-        .onChange(of: showCountryDetail) { _, newValue in
-            guard newValue else {return}
+        .onReceive(viewModel.$shouldNavigateToCountryDetail) { shouldNavigate in
+            guard shouldNavigate else { return }
             if let selectedCountry = viewModel.selectedCountry {
-                showCountryDetail = false
-                router.push(.details(country: selectedCountry) )
+                viewModel.shouldNavigateToCountryDetail = false 
+                router.push(.details(country: selectedCountry))
             }
         }
-        .onChange(of: showCachedCountryDetail) { _, newValue in
+        .onChange(of: showOtherCountryDetail) { _, newValue in
             guard newValue else {return}
             if let selectedCountry = viewModel.selectedCountry {
-                showCachedCountryDetail = false
+                showOtherCountryDetail = false
                 router.push(.details(country: selectedCountry) )
             }
         }
@@ -76,7 +76,7 @@ struct HomeScreen: View {
         }
         .sheet(isPresented: $openSearch) {
             if !viewModel.allCountries.isEmpty{
-                SearchCountriesSheet(viewModel: viewModel, showCountryDetail: $showCountryDetail)
+                SearchCountriesSheet(viewModel: viewModel)
             }else{
                 DefaultIssueView()
             }

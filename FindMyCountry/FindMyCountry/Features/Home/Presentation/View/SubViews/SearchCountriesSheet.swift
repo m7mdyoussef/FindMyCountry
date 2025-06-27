@@ -9,7 +9,6 @@ import SwiftUI
 struct SearchCountriesSheet: View {
     @ObservedObject var viewModel: HomeViewModel
     @State private var searchQuery = ""
-    @Binding var showCountryDetail: Bool
     @Environment(\.dismiss) private var dismiss
     
     var body: some View {
@@ -38,7 +37,7 @@ struct SearchCountriesSheet: View {
                             viewModel.selectedCountry = item
                             dismiss()
                             viewModel.searchQuery = ""
-                            showCountryDetail = true
+                            viewModel.shouldNavigateToCountryDetail = true
                         }
                     }
                 }

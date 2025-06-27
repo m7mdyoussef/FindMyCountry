@@ -9,7 +9,6 @@ import SwiftUI
 
 struct DefaultCountryView: View {
     @ObservedObject var viewModel: HomeViewModel
-    @Binding var showCountryDetail: Bool
     
     var body: some View {
         VStack {
@@ -42,7 +41,7 @@ struct DefaultCountryView: View {
         }
         .onTapGesture {
             viewModel.selectedCountry = viewModel.getCurrentUserCountry()
-            showCountryDetail = true
+            viewModel.shouldNavigateToCountryDetail = true
         }
     }
 }
