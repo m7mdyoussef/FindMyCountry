@@ -23,6 +23,9 @@
 		274A53222E0E696300A10B02 /* BackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53212E0E696300A10B02 /* BackgroundViewModifier.swift */; };
 		274A53262E0E69BD00A10B02 /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53252E0E69BD00A10B02 /* ToastModifier.swift */; };
 		274A53282E0E6A2200A10B02 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274A53272E0E6A2200A10B02 /* Colors.xcassets */; };
+		274A532F2E0E6D8000A10B02 /* PopupPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A532E2E0E6D8000A10B02 /* PopupPresent.swift */; };
+		274A53312E0E6DA800A10B02 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53302E0E6DA800A10B02 /* Loader.swift */; };
+		274A53332E0E6DB300A10B02 /* CustomDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53322E0E6DB300A10B02 /* CustomDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		274A53212E0E696300A10B02 /* BackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewModifier.swift; sourceTree = "<group>"; };
 		274A53252E0E69BD00A10B02 /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
 		274A53272E0E6A2200A10B02 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		274A532E2E0E6D8000A10B02 /* PopupPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupPresent.swift; sourceTree = "<group>"; };
+		274A53302E0E6DA800A10B02 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		274A53322E0E6DB300A10B02 /* CustomDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +182,7 @@
 		274A52FB2E0E64D200A10B02 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				274A53292E0E6D4C00A10B02 /* Common */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -354,6 +361,32 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		274A53292E0E6D4C00A10B02 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				274A532A2E0E6D5600A10B02 /* Views */,
+				274A532B2E0E6D5F00A10B02 /* Helper */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		274A532A2E0E6D5600A10B02 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		274A532B2E0E6D5F00A10B02 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				274A532E2E0E6D8000A10B02 /* PopupPresent.swift */,
+				274A53302E0E6DA800A10B02 /* Loader.swift */,
+				274A53322E0E6DB300A10B02 /* CustomDialog.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -492,11 +525,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274A53332E0E6DB300A10B02 /* CustomDialog.swift in Sources */,
 				274A53122E0E683300A10B02 /* TextStyle.swift in Sources */,
 				274A531E2E0E691900A10B02 /* String+Extension.swift in Sources */,
+				274A53312E0E6DA800A10B02 /* Loader.swift in Sources */,
 				274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */,
 				274A53102E0E67FA00A10B02 /* Popup.swift in Sources */,
 				274A53182E0E688300A10B02 /* AppResources.swift in Sources */,
+				274A532F2E0E6D8000A10B02 /* PopupPresent.swift in Sources */,
 				274A52ED2E0E645D00A10B02 /* FindMyCountryApp.swift in Sources */,
 				274A53152E0E685D00A10B02 /* HideKeyboardModifier.swift in Sources */,
 				274A531B2E0E68CF00A10B02 /* Constants.swift in Sources */,
