@@ -61,6 +61,8 @@
 		274A537D2E0E92FC00A10B02 /* SearchCountriesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A537C2E0E92FC00A10B02 /* SearchCountriesSheet.swift */; };
 		274A537F2E0E931000A10B02 /* CountrySelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A537E2E0E931000A10B02 /* CountrySelectionSheet.swift */; };
 		274A53812E0E933E00A10B02 /* CountryDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53802E0E933E00A10B02 /* CountryDetailsScreen.swift */; };
+		274A544C2E0EC06D00A10B02 /* CountryDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A544B2E0EC06D00A10B02 /* CountryDataView.swift */; };
+		274A544E2E0EC08500A10B02 /* CountryInfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A544D2E0EC08500A10B02 /* CountryInfoRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -137,6 +139,8 @@
 		274A537C2E0E92FC00A10B02 /* SearchCountriesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountriesSheet.swift; sourceTree = "<group>"; };
 		274A537E2E0E931000A10B02 /* CountrySelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionSheet.swift; sourceTree = "<group>"; };
 		274A53802E0E933E00A10B02 /* CountryDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsScreen.swift; sourceTree = "<group>"; };
+		274A544B2E0EC06D00A10B02 /* CountryDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDataView.swift; sourceTree = "<group>"; };
+		274A544D2E0EC08500A10B02 /* CountryInfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -392,6 +396,8 @@
 		274A530A2E0E65B800A10B02 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				274A544B2E0EC06D00A10B02 /* CountryDataView.swift */,
+				274A544D2E0EC08500A10B02 /* CountryInfoRowView.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -682,6 +688,7 @@
 				274A53582E0E85E100A10B02 /* SearchView.swift in Sources */,
 				274A533E2E0E70B800A10B02 /* APIClient.swift in Sources */,
 				274A53122E0E683300A10B02 /* TextStyle.swift in Sources */,
+				274A544C2E0EC06D00A10B02 /* CountryDataView.swift in Sources */,
 				274A53712E0E921D00A10B02 /* CountriesEndpoint.swift in Sources */,
 				274A53652E0E871500A10B02 /* PullToRefreshContainer.swift in Sources */,
 				274A53392E0E6ED000A10B02 /* Destination.swift in Sources */,
@@ -700,6 +707,7 @@
 				274A53632E0E870500A10B02 /* HeaderTitleView.swift in Sources */,
 				274A53752E0E927F00A10B02 /* HomeViewModel.swift in Sources */,
 				274A534A2E0E714200A10B02 /* Logger.swift in Sources */,
+				274A544E2E0EC08500A10B02 /* CountryInfoRowView.swift in Sources */,
 				274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */,
 				274A53102E0E67FA00A10B02 /* Popup.swift in Sources */,
 				274A53482E0E712E00A10B02 /* URLRequestBuilder.swift in Sources */,

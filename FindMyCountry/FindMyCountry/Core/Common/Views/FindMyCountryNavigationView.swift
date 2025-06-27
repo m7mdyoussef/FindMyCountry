@@ -16,9 +16,7 @@ struct FindMyCountryNavigationView: View {
                 .onTapGesture {
                     didtapBack = true
                 }
-            
-            Spacer()
-            
+                        
             Text(AppConstants.localizedText.countryDetails)
                 .textStyle(BoldTextStyle(fontSize: 20, color:.eyeTiger))
             
