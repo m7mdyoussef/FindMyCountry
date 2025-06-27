@@ -16,7 +16,7 @@ protocol DestinationType: Hashable {
 
 enum AppDestinationUIPilot: DestinationType {
     case home
-    
+    case details(country: Country)
     
     var name: String {
         return String(reflecting: view.self)
@@ -27,6 +27,8 @@ enum AppDestinationUIPilot: DestinationType {
         switch self {
             case .home:
                 HomeScreen().navigate(destination: AppDestinationUIPilot.self)
+            case .details(let country):
+                CountryDetailsScreen(country: country).navigate(destination: AppDestinationUIPilot.self)
         }
     }
 }

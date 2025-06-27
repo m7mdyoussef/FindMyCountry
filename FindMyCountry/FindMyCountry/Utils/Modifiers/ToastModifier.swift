@@ -12,11 +12,13 @@ struct ToastModifier: ViewModifier {
     let message: String
     let duration: TimeInterval
     
+    @State private var showToast = false
+    
     func body(content: Content) -> some View {
         ZStack {
             content
             
-            if isPresented {
+            if showToast {
                 VStack {
                     Spacer()
                     Text(message)
@@ -26,16 +28,21 @@ struct ToastModifier: ViewModifier {
                         .cornerRadius(8)
                         .padding(.bottom, 40)
                         .transition(.move(edge: .bottom).combined(with: .opacity))
-                        .onAppear {
-                            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
-                                withAnimation {
-                                    isPresented = false
-                                }
-                            }
-                        }
                 }
-                .animation(.easeInOut, value: isPresented)
+                .animation(.easeInOut, value: showToast)
+            }
+        }
+        .onChange(of: isPresented) { _,newValue in
+            if newValue {
+                showToast = true
+                DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+                    withAnimation {
+                        showToast = false
+                    }
+                    isPresented = false
+                }
             }
         }
     }
 }
+
