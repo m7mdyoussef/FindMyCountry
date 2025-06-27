@@ -52,7 +52,9 @@ class LocationManager: NSObject, ObservableObject, CLLocationManagerDelegate {
                 requestLocation()
             default:
                 DispatchQueue.main.async {
-                    self.userCountry = ""
+                    if !self.userCountry.isEmpty {
+                        self.userCountry = ""
+                    }
                 }
         }
     }

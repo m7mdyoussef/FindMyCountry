@@ -21,7 +21,8 @@ class HomeViewModel: ObservableObject {
     @Published var searchQuery = ""
     let maxSelectedCountries = 5
     @Published var exceedMaxSelectedCountries: Bool = false
-    
+    @Published var shouldNavigateToCountryDetail: Bool = false
+
     @Published var isSuccess: Bool?
     @Published var showError: Bool?
     var errorMessage: String = ""
@@ -34,8 +35,23 @@ class HomeViewModel: ObservableObject {
         self.selectedCountriesCache = selectedCountriesCache
         self.locationManager = locationManager
         self.currentUserCountry = locationManager.userCountry
+        bindLocationUpdates()
+    }
+    
+    private func bindLocationUpdates() {
         locationManager.$userCountry
-            .assign(to: &$currentUserCountry)
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] country in
+                guard let self = self else { return }
+                if !country.isEmpty {
+                    self.currentUserCountry = country
+                }
+            }
+            .store(in: &cancellables)
+    }
+    
+    func requestUserLocation() {
+        locationManager.requestLocation()
     }
     
     func getAllCountries(){
