@@ -13,6 +13,16 @@
 		274A52F22E0E646300A10B02 /* FindMyCountryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A52F02E0E646300A10B02 /* FindMyCountryTests.swift */; };
 		274A52F62E0E646600A10B02 /* FindMyCountryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A52F32E0E646600A10B02 /* FindMyCountryUITests.swift */; };
 		274A52F72E0E646600A10B02 /* FindMyCountryUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A52F42E0E646600A10B02 /* FindMyCountryUITestsLaunchTests.swift */; };
+		274A53102E0E67FA00A10B02 /* Popup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A530F2E0E67FA00A10B02 /* Popup.swift */; };
+		274A53122E0E683300A10B02 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53112E0E683300A10B02 /* TextStyle.swift */; };
+		274A53152E0E685D00A10B02 /* HideKeyboardModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53142E0E685D00A10B02 /* HideKeyboardModifier.swift */; };
+		274A53182E0E688300A10B02 /* AppResources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53172E0E688300A10B02 /* AppResources.swift */; };
+		274A531B2E0E68CF00A10B02 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A531A2E0E68CF00A10B02 /* Constants.swift */; };
+		274A531E2E0E691900A10B02 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A531D2E0E691900A10B02 /* String+Extension.swift */; };
+		274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A531F2E0E692F00A10B02 /* View+Extension.swift */; };
+		274A53222E0E696300A10B02 /* BackgroundViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53212E0E696300A10B02 /* BackgroundViewModifier.swift */; };
+		274A53262E0E69BD00A10B02 /* ToastModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53252E0E69BD00A10B02 /* ToastModifier.swift */; };
+		274A53282E0E6A2200A10B02 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 274A53272E0E6A2200A10B02 /* Colors.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +52,16 @@
 		274A52F02E0E646300A10B02 /* FindMyCountryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCountryTests.swift; sourceTree = "<group>"; };
 		274A52F32E0E646600A10B02 /* FindMyCountryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCountryUITests.swift; sourceTree = "<group>"; };
 		274A52F42E0E646600A10B02 /* FindMyCountryUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindMyCountryUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		274A530F2E0E67FA00A10B02 /* Popup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Popup.swift; sourceTree = "<group>"; };
+		274A53112E0E683300A10B02 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		274A53142E0E685D00A10B02 /* HideKeyboardModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HideKeyboardModifier.swift; sourceTree = "<group>"; };
+		274A53172E0E688300A10B02 /* AppResources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResources.swift; sourceTree = "<group>"; };
+		274A531A2E0E68CF00A10B02 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		274A531D2E0E691900A10B02 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		274A531F2E0E692F00A10B02 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
+		274A53212E0E696300A10B02 /* BackgroundViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundViewModifier.swift; sourceTree = "<group>"; };
+		274A53252E0E69BD00A10B02 /* ToastModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastModifier.swift; sourceTree = "<group>"; };
+		274A53272E0E6A2200A10B02 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				274A52E82E0E645D00A10B02 /* Assets.xcassets */,
+				274A53272E0E6A2200A10B02 /* Colors.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -162,6 +183,10 @@
 		274A52FC2E0E64E200A10B02 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				274A53162E0E687900A10B02 /* AppResources */,
+				274A530E2E0E67EC00A10B02 /* Modifiers */,
+				274A53192E0E68C300A10B02 /* Constants */,
+				274A531C2E0E690B00A10B02 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -292,6 +317,43 @@
 			path = Presentation;
 			sourceTree = "<group>";
 		};
+		274A530E2E0E67EC00A10B02 /* Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				274A530F2E0E67FA00A10B02 /* Popup.swift */,
+				274A53112E0E683300A10B02 /* TextStyle.swift */,
+				274A53142E0E685D00A10B02 /* HideKeyboardModifier.swift */,
+				274A53212E0E696300A10B02 /* BackgroundViewModifier.swift */,
+				274A53252E0E69BD00A10B02 /* ToastModifier.swift */,
+			);
+			path = Modifiers;
+			sourceTree = "<group>";
+		};
+		274A53162E0E687900A10B02 /* AppResources */ = {
+			isa = PBXGroup;
+			children = (
+				274A53172E0E688300A10B02 /* AppResources.swift */,
+			);
+			path = AppResources;
+			sourceTree = "<group>";
+		};
+		274A53192E0E68C300A10B02 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				274A531A2E0E68CF00A10B02 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		274A531C2E0E690B00A10B02 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				274A531D2E0E691900A10B02 /* String+Extension.swift */,
+				274A531F2E0E692F00A10B02 /* View+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -403,6 +465,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274A53282E0E6A2200A10B02 /* Colors.xcassets in Resources */,
 				274A52EE2E0E645D00A10B02 /* Preview Assets.xcassets in Resources */,
 				274A52EF2E0E645D00A10B02 /* Assets.xcassets in Resources */,
 			);
@@ -429,7 +492,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274A53122E0E683300A10B02 /* TextStyle.swift in Sources */,
+				274A531E2E0E691900A10B02 /* String+Extension.swift in Sources */,
+				274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */,
+				274A53102E0E67FA00A10B02 /* Popup.swift in Sources */,
+				274A53182E0E688300A10B02 /* AppResources.swift in Sources */,
 				274A52ED2E0E645D00A10B02 /* FindMyCountryApp.swift in Sources */,
+				274A53152E0E685D00A10B02 /* HideKeyboardModifier.swift in Sources */,
+				274A531B2E0E68CF00A10B02 /* Constants.swift in Sources */,
+				274A53262E0E69BD00A10B02 /* ToastModifier.swift in Sources */,
+				274A53222E0E696300A10B02 /* BackgroundViewModifier.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
