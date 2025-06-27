@@ -51,5 +51,8 @@ struct AppConstants {
         static let retry = "Retry"
         static let OK = "OK"
         static let selectedCountriesCacheKey = "SelectedCountriesCacheKey"
+        static let refreshing = "Refreshing..."
+        static let checkConnection = "Something went wrong, You nedd to check your Internet Connection and try again"
+
     }
 }
