@@ -20,6 +20,7 @@ enum AppResources {
         static let emptyList = "empty-list".image
         static let errorIcon = "error-icon".image
         static let noConnection = "no-connection".image
+        static let cancelSearchIcon = "xmark.circle.fill".systemImage
         
     }
     
