@@ -37,6 +37,9 @@
 		274A53482E0E712E00A10B02 /* URLRequestBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53472E0E712E00A10B02 /* URLRequestBuilder.swift */; };
 		274A534A2E0E714200A10B02 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53492E0E714200A10B02 /* Logger.swift */; };
 		274A534C2E0E715700A10B02 /* URLs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A534B2E0E715700A10B02 /* URLs.swift */; };
+		274A534F2E0E805400A10B02 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A534E2E0E805400A10B02 /* LocationManager.swift */; };
+		274A53522E0E809800A10B02 /* SelectedCountriesCachingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53512E0E809800A10B02 /* SelectedCountriesCachingManager.swift */; };
+		274A53542E0E80ED00A10B02 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53532E0E80ED00A10B02 /* Country.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +93,9 @@
 		274A53472E0E712E00A10B02 /* URLRequestBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestBuilder.swift; sourceTree = "<group>"; };
 		274A53492E0E714200A10B02 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		274A534B2E0E715700A10B02 /* URLs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLs.swift; sourceTree = "<group>"; };
+		274A534E2E0E805400A10B02 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		274A53512E0E809800A10B02 /* SelectedCountriesCachingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountriesCachingManager.swift; sourceTree = "<group>"; };
+		274A53532E0E80ED00A10B02 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +214,8 @@
 				274A53342E0E6E9100A10B02 /* Navigation */,
 				274A53372E0E6EB800A10B02 /* Destinations */,
 				274A533C2E0E70A200A10B02 /* NetworkService */,
+				274A53502E0E808300A10B02 /* CachingManager */,
+				274A534D2E0E804600A10B02 /* LocationManager */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -284,6 +292,7 @@
 		274A53042E0E655400A10B02 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				274A53532E0E80ED00A10B02 /* Country.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -444,6 +453,22 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+		274A534D2E0E804600A10B02 /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				274A534E2E0E805400A10B02 /* LocationManager.swift */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
+		274A53502E0E808300A10B02 /* CachingManager */ = {
+			isa = PBXGroup;
+			children = (
+				274A53512E0E809800A10B02 /* SelectedCountriesCachingManager.swift */,
+			);
+			path = CachingManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -584,12 +609,15 @@
 			files = (
 				274A53402E0E70D300A10B02 /* URLSessionProtocol.swift in Sources */,
 				274A53332E0E6DB300A10B02 /* CustomDialog.swift in Sources */,
+				274A534F2E0E805400A10B02 /* LocationManager.swift in Sources */,
 				274A533E2E0E70B800A10B02 /* APIClient.swift in Sources */,
 				274A53122E0E683300A10B02 /* TextStyle.swift in Sources */,
 				274A53392E0E6ED000A10B02 /* Destination.swift in Sources */,
 				274A531E2E0E691900A10B02 /* String+Extension.swift in Sources */,
+				274A53522E0E809800A10B02 /* SelectedCountriesCachingManager.swift in Sources */,
 				274A533B2E0E6F1900A10B02 /* HomeScreen.swift in Sources */,
 				274A53462E0E711400A10B02 /* APIEndpoint.swift in Sources */,
+				274A53542E0E80ED00A10B02 /* Country.swift in Sources */,
 				274A53312E0E6DA800A10B02 /* Loader.swift in Sources */,
 				274A534A2E0E714200A10B02 /* Logger.swift in Sources */,
 				274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */,
@@ -771,6 +799,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FindMyCountry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your app needs access to your location to find your country.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your app needs access to your location to find your country.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your app needs access to your location to find your country.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -799,6 +830,9 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FindMyCountry/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Your app needs access to your location to find your country.";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Your app needs access to your location to find your country.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Your app needs access to your location to find your country.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

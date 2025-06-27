@@ -24,4 +24,32 @@ struct AppConstants {
         static let noConnection = "No Internet Connection, plaese try again"
         static let SomeThingWentWrong = "Something went wrong"
     }
+    
+    struct localizedText {
+        
+        static let egypt = "Egypt"
+        static let FindMyCountry = "Find My Country"
+        static let countryDetails = "Country Details"
+        static let done = "Done"
+        static let emptyListHint = "Oops, No Data Found You Can Add Up to 5 Countries."
+        static let onlyFiveCountriesAllowed = "You Can't Add more than 5 Countries."
+        
+        static let search = "Search"
+        static let searchCountries = "Search Countries"
+        static let defaultCountry = "Default country :"
+        static let otherCountry = "other countries :"
+        static let addCountryButtonTitle = "Add Country"
+        static let currency = "Currency: "
+        static let country = "Country: "
+        static let capital = "Capital: "
+        static let languages = "Languages: "
+        static let alertDeleteConfirmation = "Confirmation!"
+        static let alertDeleteDescription = "Are you sure that you want to delete this country?"
+        static let cancel = "Cancel"
+        static let delete = "Delete"
+        static let error = "Error"
+        static let retry = "Retry"
+        static let OK = "OK"
+        static let selectedCountriesCacheKey = "SelectedCountriesCacheKey"
+    }
 }
