@@ -49,6 +49,18 @@
 		274A53632E0E870500A10B02 /* HeaderTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53622E0E870500A10B02 /* HeaderTitleView.swift */; };
 		274A53652E0E871500A10B02 /* PullToRefreshContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53642E0E871500A10B02 /* PullToRefreshContainer.swift */; };
 		274A53692E0E8F7A00A10B02 /* DefaultIssueView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53682E0E8F7A00A10B02 /* DefaultIssueView.swift */; };
+		274A536B2E0E91D200A10B02 /* RemoteCountriesUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A536A2E0E91D200A10B02 /* RemoteCountriesUseCaseImpl.swift */; };
+		274A536D2E0E91E700A10B02 /* RemoteCountriesRepositoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A536C2E0E91E700A10B02 /* RemoteCountriesRepositoryContract.swift */; };
+		274A536F2E0E91FA00A10B02 /* RemoteCountriesUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A536E2E0E91FA00A10B02 /* RemoteCountriesUseCaseContract.swift */; };
+		274A53712E0E921D00A10B02 /* CountriesEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53702E0E921D00A10B02 /* CountriesEndpoint.swift */; };
+		274A53732E0E923500A10B02 /* RemoteCountriesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53722E0E923500A10B02 /* RemoteCountriesRepositoryImpl.swift */; };
+		274A53752E0E927F00A10B02 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53742E0E927F00A10B02 /* HomeViewModel.swift */; };
+		274A53772E0E92C000A10B02 /* DefaultCountryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53762E0E92C000A10B02 /* DefaultCountryView.swift */; };
+		274A53792E0E92D900A10B02 /* SelectedCountriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53782E0E92D900A10B02 /* SelectedCountriesListView.swift */; };
+		274A537B2E0E92EE00A10B02 /* SelectedCountriesRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A537A2E0E92EE00A10B02 /* SelectedCountriesRowView.swift */; };
+		274A537D2E0E92FC00A10B02 /* SearchCountriesSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A537C2E0E92FC00A10B02 /* SearchCountriesSheet.swift */; };
+		274A537F2E0E931000A10B02 /* CountrySelectionSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A537E2E0E931000A10B02 /* CountrySelectionSheet.swift */; };
+		274A53812E0E933E00A10B02 /* CountryDetailsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A53802E0E933E00A10B02 /* CountryDetailsScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -113,6 +125,18 @@
 		274A53622E0E870500A10B02 /* HeaderTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderTitleView.swift; sourceTree = "<group>"; };
 		274A53642E0E871500A10B02 /* PullToRefreshContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PullToRefreshContainer.swift; sourceTree = "<group>"; };
 		274A53682E0E8F7A00A10B02 /* DefaultIssueView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultIssueView.swift; sourceTree = "<group>"; };
+		274A536A2E0E91D200A10B02 /* RemoteCountriesUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesUseCaseImpl.swift; sourceTree = "<group>"; };
+		274A536C2E0E91E700A10B02 /* RemoteCountriesRepositoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesRepositoryContract.swift; sourceTree = "<group>"; };
+		274A536E2E0E91FA00A10B02 /* RemoteCountriesUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesUseCaseContract.swift; sourceTree = "<group>"; };
+		274A53702E0E921D00A10B02 /* CountriesEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesEndpoint.swift; sourceTree = "<group>"; };
+		274A53722E0E923500A10B02 /* RemoteCountriesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesRepositoryImpl.swift; sourceTree = "<group>"; };
+		274A53742E0E927F00A10B02 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		274A53762E0E92C000A10B02 /* DefaultCountryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultCountryView.swift; sourceTree = "<group>"; };
+		274A53782E0E92D900A10B02 /* SelectedCountriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountriesListView.swift; sourceTree = "<group>"; };
+		274A537A2E0E92EE00A10B02 /* SelectedCountriesRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectedCountriesRowView.swift; sourceTree = "<group>"; };
+		274A537C2E0E92FC00A10B02 /* SearchCountriesSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCountriesSheet.swift; sourceTree = "<group>"; };
+		274A537E2E0E931000A10B02 /* CountrySelectionSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySelectionSheet.swift; sourceTree = "<group>"; };
+		274A53802E0E933E00A10B02 /* CountryDetailsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailsScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +303,7 @@
 		274A53002E0E652100A10B02 /* UsesCases */ = {
 			isa = PBXGroup;
 			children = (
+				274A536A2E0E91D200A10B02 /* RemoteCountriesUseCaseImpl.swift */,
 			);
 			path = UsesCases;
 			sourceTree = "<group>";
@@ -286,6 +311,8 @@
 		274A53012E0E652A00A10B02 /* Contracts */ = {
 			isa = PBXGroup;
 			children = (
+				274A536C2E0E91E700A10B02 /* RemoteCountriesRepositoryContract.swift */,
+				274A536E2E0E91FA00A10B02 /* RemoteCountriesUseCaseContract.swift */,
 			);
 			path = Contracts;
 			sourceTree = "<group>";
@@ -303,6 +330,7 @@
 		274A53032E0E654B00A10B02 /* EndPoints */ = {
 			isa = PBXGroup;
 			children = (
+				274A53702E0E921D00A10B02 /* CountriesEndpoint.swift */,
 			);
 			path = EndPoints;
 			sourceTree = "<group>";
@@ -318,6 +346,7 @@
 		274A53052E0E656300A10B02 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				274A53722E0E923500A10B02 /* RemoteCountriesRepositoryImpl.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -334,6 +363,7 @@
 		274A53072E0E658500A10B02 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				274A53742E0E927F00A10B02 /* HomeViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -341,8 +371,8 @@
 		274A53082E0E659300A10B02 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				274A53092E0E659E00A10B02 /* SubViews */,
 				274A533A2E0E6F1900A10B02 /* HomeScreen.swift */,
+				274A53092E0E659E00A10B02 /* SubViews */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -350,6 +380,11 @@
 		274A53092E0E659E00A10B02 /* SubViews */ = {
 			isa = PBXGroup;
 			children = (
+				274A53762E0E92C000A10B02 /* DefaultCountryView.swift */,
+				274A53782E0E92D900A10B02 /* SelectedCountriesListView.swift */,
+				274A537A2E0E92EE00A10B02 /* SelectedCountriesRowView.swift */,
+				274A537C2E0E92FC00A10B02 /* SearchCountriesSheet.swift */,
+				274A537E2E0E931000A10B02 /* CountrySelectionSheet.swift */,
 			);
 			path = SubViews;
 			sourceTree = "<group>";
@@ -364,6 +399,7 @@
 		274A530B2E0E65B800A10B02 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				274A53802E0E933E00A10B02 /* CountryDetailsScreen.swift */,
 				274A530A2E0E65B800A10B02 /* SubViews */,
 			);
 			path = View;
@@ -640,35 +676,47 @@
 				274A53402E0E70D300A10B02 /* URLSessionProtocol.swift in Sources */,
 				274A53332E0E6DB300A10B02 /* CustomDialog.swift in Sources */,
 				274A535F2E0E867300A10B02 /* AddCountryButton.swift in Sources */,
+				274A537F2E0E931000A10B02 /* CountrySelectionSheet.swift in Sources */,
 				274A53692E0E8F7A00A10B02 /* DefaultIssueView.swift in Sources */,
 				274A534F2E0E805400A10B02 /* LocationManager.swift in Sources */,
 				274A53582E0E85E100A10B02 /* SearchView.swift in Sources */,
 				274A533E2E0E70B800A10B02 /* APIClient.swift in Sources */,
 				274A53122E0E683300A10B02 /* TextStyle.swift in Sources */,
+				274A53712E0E921D00A10B02 /* CountriesEndpoint.swift in Sources */,
 				274A53652E0E871500A10B02 /* PullToRefreshContainer.swift in Sources */,
 				274A53392E0E6ED000A10B02 /* Destination.swift in Sources */,
+				274A53792E0E92D900A10B02 /* SelectedCountriesListView.swift in Sources */,
 				274A53562E0E85CD00A10B02 /* FindMyCountryNavigationView.swift in Sources */,
 				274A531E2E0E691900A10B02 /* String+Extension.swift in Sources */,
 				274A53522E0E809800A10B02 /* SelectedCountriesCachingManager.swift in Sources */,
+				274A53812E0E933E00A10B02 /* CountryDetailsScreen.swift in Sources */,
 				274A533B2E0E6F1900A10B02 /* HomeScreen.swift in Sources */,
 				274A53462E0E711400A10B02 /* APIEndpoint.swift in Sources */,
+				274A53732E0E923500A10B02 /* RemoteCountriesRepositoryImpl.swift in Sources */,
 				274A53542E0E80ED00A10B02 /* Country.swift in Sources */,
 				274A53612E0E868600A10B02 /* SearchTextFieldView.swift in Sources */,
 				274A535A2E0E85F700A10B02 /* CountryFlagView.swift in Sources */,
 				274A53312E0E6DA800A10B02 /* Loader.swift in Sources */,
 				274A53632E0E870500A10B02 /* HeaderTitleView.swift in Sources */,
+				274A53752E0E927F00A10B02 /* HomeViewModel.swift in Sources */,
 				274A534A2E0E714200A10B02 /* Logger.swift in Sources */,
 				274A53202E0E692F00A10B02 /* View+Extension.swift in Sources */,
 				274A53102E0E67FA00A10B02 /* Popup.swift in Sources */,
 				274A53482E0E712E00A10B02 /* URLRequestBuilder.swift in Sources */,
+				274A536B2E0E91D200A10B02 /* RemoteCountriesUseCaseImpl.swift in Sources */,
+				274A536D2E0E91E700A10B02 /* RemoteCountriesRepositoryContract.swift in Sources */,
+				274A537D2E0E92FC00A10B02 /* SearchCountriesSheet.swift in Sources */,
 				274A53182E0E688300A10B02 /* AppResources.swift in Sources */,
 				274A532F2E0E6D8000A10B02 /* PopupPresent.swift in Sources */,
 				274A52ED2E0E645D00A10B02 /* FindMyCountryApp.swift in Sources */,
 				274A53152E0E685D00A10B02 /* HideKeyboardModifier.swift in Sources */,
+				274A53772E0E92C000A10B02 /* DefaultCountryView.swift in Sources */,
 				274A53362E0E6EA200A10B02 /* Router.swift in Sources */,
 				274A53442E0E70FF00A10B02 /* ResponseValidator.swift in Sources */,
+				274A537B2E0E92EE00A10B02 /* SelectedCountriesRowView.swift in Sources */,
 				274A534C2E0E715700A10B02 /* URLs.swift in Sources */,
 				274A53422E0E70E600A10B02 /* NetworkService.swift in Sources */,
+				274A536F2E0E91FA00A10B02 /* RemoteCountriesUseCaseContract.swift in Sources */,
 				274A531B2E0E68CF00A10B02 /* Constants.swift in Sources */,
 				274A53262E0E69BD00A10B02 /* ToastModifier.swift in Sources */,
 				274A53222E0E696300A10B02 /* BackgroundViewModifier.swift in Sources */,

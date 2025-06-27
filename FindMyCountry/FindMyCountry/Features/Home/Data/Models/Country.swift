@@ -20,8 +20,17 @@ struct Country: Codable, Hashable, Identifiable {
     let population: Int?
     let timezones: [String]?
     
+    
     var id: String {
-        cca2 ?? UUID().uuidString
+        name?.common ?? UUID().uuidString
+    }
+    
+    static func == (lhs: Country, rhs: Country) -> Bool {
+        lhs.name?.common == rhs.name?.common
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name?.common)
     }
 }
 
