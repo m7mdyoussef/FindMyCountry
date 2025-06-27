@@ -64,6 +64,10 @@
 		274A544E2E0EC08500A10B02 /* CountryInfoRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A544D2E0EC08500A10B02 /* CountryInfoRowView.swift */; };
 		274A54512E0ED53500A10B02 /* NetworkServiceMocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54502E0ED53500A10B02 /* NetworkServiceMocks.swift */; };
 		274A54532E0ED56400A10B02 /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54522E0ED56400A10B02 /* NetworkServiceTests.swift */; };
+		274A54582E0EDDCC00A10B02 /* MockAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54572E0EDDCC00A10B02 /* MockAPIClient.swift */; };
+		274A545A2E0EDDF300A10B02 /* MockCountriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A54592E0EDDF300A10B02 /* MockCountriesRepository.swift */; };
+		274A545C2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A545B2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift */; };
+		274A545F2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274A545E2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +147,10 @@
 		274A544D2E0EC08500A10B02 /* CountryInfoRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryInfoRowView.swift; sourceTree = "<group>"; };
 		274A54502E0ED53500A10B02 /* NetworkServiceMocks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceMocks.swift; sourceTree = "<group>"; };
 		274A54522E0ED56400A10B02 /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		274A54572E0EDDCC00A10B02 /* MockAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIClient.swift; sourceTree = "<group>"; };
+		274A54592E0EDDF300A10B02 /* MockCountriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCountriesRepository.swift; sourceTree = "<group>"; };
+		274A545B2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesRepositoryTests.swift; sourceTree = "<group>"; };
+		274A545E2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteCountriesUseCaseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +223,8 @@
 		274A52F12E0E646300A10B02 /* FindMyCountryTests */ = {
 			isa = PBXGroup;
 			children = (
+				274A545D2E0EDE6200A10B02 /* UseCase */,
+				274A54542E0EDDAF00A10B02 /* Repository */,
 				274A544F2E0ED52600A10B02 /* NetworkService */,
 			);
 			path = FindMyCountryTests;
@@ -548,6 +558,32 @@
 			path = NetworkService;
 			sourceTree = "<group>";
 		};
+		274A54542E0EDDAF00A10B02 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				274A54552E0EDDB700A10B02 /* Mocks */,
+				274A545B2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		274A54552E0EDDB700A10B02 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				274A54572E0EDDCC00A10B02 /* MockAPIClient.swift */,
+				274A54592E0EDDF300A10B02 /* MockCountriesRepository.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		274A545D2E0EDE6200A10B02 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				274A545E2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -746,8 +782,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				274A545F2E0EDE7800A10B02 /* RemoteCountriesUseCaseTests.swift in Sources */,
+				274A545C2E0EDE1200A10B02 /* RemoteCountriesRepositoryTests.swift in Sources */,
 				274A54512E0ED53500A10B02 /* NetworkServiceMocks.swift in Sources */,
 				274A54532E0ED56400A10B02 /* NetworkServiceTests.swift in Sources */,
+				274A545A2E0EDDF300A10B02 /* MockCountriesRepository.swift in Sources */,
+				274A54582E0EDDCC00A10B02 /* MockAPIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -911,8 +951,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -920,6 +959,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = joe.FindMyCountry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -942,8 +985,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -951,6 +993,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = joe.FindMyCountry;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
