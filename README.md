@@ -4,20 +4,20 @@ Features:
 
 Country Home View:
 * A search icon at the top allows the user to search for Countries by name.
-* Add country button at the top allows the user to search and select Countries.
+* Add country button at the bottom allows the user to search and select Countries to add to other countries list.
 * Displays User’s default country based on the current location of the user:
     * Country flag.
     * Country name.
     * Country currency and its symbol.
     * Automatically adds the first country to the main view based on the user's current location (via GPS).
-    * If the user denies location permission, a Turkey country is added instead.
+    * If the user denies location permission, Egypt country is added instead.
 
 * Displays selected countries in other countries section:
     * Country flag
     * Country name
 * When user click the search icon, the app shows the search sheet with all countries by default.
 * When the user enters a search term, it shows results using the search mechanism locally and can navigate to country details when click on it.
-* When the user click Add country it opens select country sheet with search, then user can select more than one country to add it to other counties list and cache it for offline mode.
+* When the user click Add country button it opens select country sheet with search, then user can select more than one country to add it to other counties list and cache it for offline mode.
 * user can only add up to 5 countries to counties list or he will be notified via toast message.
 * user can remove from counties list via confirmation dialog.
 * also user can swipe to refresh when got online again.
